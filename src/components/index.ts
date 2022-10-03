@@ -1,3 +1,4 @@
 export * from './Home';
-export * from './Carsinfo';
-export * from './Navbar';
+export * from './About';
+export * from './Dashboard';
+export * from './SignIn';
