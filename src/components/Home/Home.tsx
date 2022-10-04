@@ -42,7 +42,7 @@ export const Home = ( props: Props ) => {
             <div className={classes.main_text}>
                 <h1>{ props.title }</h1>
                 <Button>
-                    <Link to='/carsbook' className={classes.button_text}>Take me to my Car Inventory Dashboard</Link>
+                    <Link to='/dashboard' className={classes.button_text}>Take Me To My Car Inventory Dashboard</Link>
                 </Button>
             </div>
             </div>

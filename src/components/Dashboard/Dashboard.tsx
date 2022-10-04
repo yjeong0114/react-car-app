@@ -214,7 +214,7 @@ export const Dashboard = withRouter(( props:DashboardProps ) => {
 
   return (
     <div className={`${classes.root} ${classes.column}`}>
-        <CssBaseline /> {/* This is just a normal part of complex MUI; see docs */}
+        <CssBaseline /> /* This is just a normal part of complex MUI; see docs */
         <AppBar position="fixed" className={clsx(classes.appBar, {[classes.appBarShift]: open })}> {/* We are using MUI to make another navbar */}
             <Toolbar className={classes.toolbar}>
                 <IconButton color="inherit" aria-label="open-drawer" onClick={handleDrawerOpen} edge="start" className={clsx(classes.menuButton, open && classes.hide)}>
@@ -224,8 +224,6 @@ export const Dashboard = withRouter(( props:DashboardProps ) => {
                     My Car Inventory
                 </Typography>
                 <Button className={classes.toolbar_button} onClick={handleDialogClickOpen}>Create New Car</Button>
-
-                {/* Dialog Pop Up */}
                 <Dialog open={dialogOpen} onClose={handleDialogClickClose} aria-labelledby="form-dialog-title">
                     <DialogTitle id="form-dialog-title">Add New Car</DialogTitle>
                     <DialogContent>
@@ -237,7 +235,6 @@ export const Dashboard = withRouter(( props:DashboardProps ) => {
                         <Button onClick={handleDialogClickOpen} color="primary">Done</Button>
                     </DialogActions>
                 </Dialog>
-                {/* End dialog pop-up */}
             </Toolbar>
         </AppBar>
         <MUIDrawer className={classes.drawer} variant="persistent" anchor="left" open={open} classes={{paper: classes.drawerPaper,}}>
@@ -260,7 +257,7 @@ export const Dashboard = withRouter(( props:DashboardProps ) => {
         </MUIDrawer>
         <main className={`${clsx(classes.content, {[classes.contentShift]: open,})} ${classes.leftMargin}`}>
             <div className={classes.drawerHeader} />
-                <DataTable /> {/* Keep this commented out for now */}
+                <DataTable /> 
         </main>
     </div>
 )

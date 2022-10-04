@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Home, Dashboard, About, SignIn } from './components'
-import './styles.css'
-{/* New content */}
+import { Home, Dashboard, About, SignIn } from './components';
+import './styles.css';
+/* New content */
 import { FirebaseAppProvider, AuthCheck } from 'reactfire';
 import { firebaseConfig } from './firebaseConfig'
 import 'firebase/auth';
-{/* End content */}
+/* End content */
 import { Provider } from 'react-redux';
 import { store } from './redux/store'
 

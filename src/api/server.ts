@@ -44,7 +44,7 @@ export const server_calls = {
         });
     },
     delete: async(id:string) => {
-        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/contacts/${id}`,{
+        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/contacts/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
