@@ -214,7 +214,7 @@ export const Dashboard = withRouter(( props:DashboardProps ) => {
 
   return (
     <div className={`${classes.root} ${classes.column}`}>
-        <CssBaseline /> /* This is just a normal part of complex MUI; see docs */
+        <CssBaseline /> 
         <AppBar position="fixed" className={clsx(classes.appBar, {[classes.appBarShift]: open })}> {/* We are using MUI to make another navbar */}
             <Toolbar className={classes.toolbar}>
                 <IconButton color="inherit" aria-label="open-drawer" onClick={handleDrawerOpen} edge="start" className={clsx(classes.menuButton, open && classes.hide)}>

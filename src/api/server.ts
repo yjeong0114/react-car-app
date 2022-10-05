@@ -2,7 +2,7 @@ let token = '393485fd76b103cec023d8b91396e4011b43eed7f6b12aef'
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/contacts`,{
+        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/cars`,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ export const server_calls = {
     },
 
     create: async(data: any = {}) => {
-        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/contacts`,{
+        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/cars`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ export const server_calls = {
         return await response.json()
     },
     update: async (id:string, data:any = {}) => {
-        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/contacts/${id}`, {
+        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/cars/${id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export const server_calls = {
         });
     },
     delete: async(id:string) => {
-        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/contacts/${id}`,{
+        const response = await fetch(`https://my-car-inventory-yoon.herokuapp.com/api/cars/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
